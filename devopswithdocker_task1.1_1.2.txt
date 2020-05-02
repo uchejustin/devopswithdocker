@@ -1,0 +1,164 @@
+Script started on 2020-05-03 00:53:32+03:00
+]777;notify;Command completed;exit]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+php                        7-fpm               9f53a362fb2f        9 days ago          405MB
+php                        latest              6340e7a80170        9 days ago          405MB
+postgres                   latest              0f10374e5170        9 days ago          314MB
+nginx                      latest              602e111c06b6        9 days ago          127MB
+alpine                     latest              a187dde48cd2        5 weeks ago         5.6MB
+hello-world                latest              bf756fb1ae65        4 months ago        13.3kB
+django                     latest              eb40dcf64078        3 years ago         436MB
+tomaszguzialek/flask-api   latest              9fed73d6ee86        3 years ago         436MB
+]777;notify;Command completed;docker images]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker run -dit nginx
+638b30e26d4b0f6713b3ce526cff687890a253352130385d076a75814611977e
+]777;notify;Command completed;docker run -dit nginx]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker run -dit nginx[K[K[K[K[Ktomaszgui[Kzialek/flask-api
+27f55545e6b9825980a6d04cd56334d9a5167174bd4a60c86b64d5a7f2f7d986
+]777;notify;Command completed;docker run -dit tomaszguzialek/flask-api]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker run -dit tomaszguzialek/flask-apinginx[K[K[K[K[K[Kdjango
+3f2633af37173f29f8b2c18d3895f5f94919fe5d327011721c1403c7ed172fc9
+]777;notify;Command completed;docker run -dit django]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker run -dit djangotomaszguzialek/flask-apinginx[K[8Pimagesexit[Kdocker container ls -a[K
+CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS               NAMES
+3f2633af3717        django                     "python3"                8 seconds ago       Up 5 seconds                            clever_keldysh
+27f55545e6b9        tomaszguzialek/flask-api   "gunicorn '-b 0.0.0.…"   19 seconds ago      Up 16 seconds       5000/tcp            peaceful_wu
+638b30e26d4b        nginx                      "nginx -g 'daemon of…"   55 seconds ago      Up 52 seconds       80/tcp              wonderful_hawking
+]777;notify;Command completed;docker container ls]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker container lsrun -dit djangotomaszguzialek/flask-apinginx[K[8Pimagesexit[Kdocker container ls -a[Ks ls[3Prun -d phpalpine[1Pnginx[6Pimagesexit[Kdocker run -d nginx, alphine, phpimages[Kexit[Kcd ..[3Plssudo cd root[5P[C[C[C[C[C[C[Cls[Kcd ..[3Plscd root[5@sudo [C[C[C[C[C[C[Cls[Kcd ..[1Pexitdocker imagesrun -d nginx, alphine, php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker imagesrun -d nginxalpine[3Pphpcontainers ls[1P ls -aexit[Kdocker imagesrun -dit nginxtomaszguzialek/flask-apidjango[K[3Pcontainer ls[Kdcoker stop 3f
+bash: dcoker: command not found...
+Similar command is: 'docker'
+]777;notify;Command completed;dcoker stop 3f]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ dcoker stop 3f[C[1P[C[1@c
+3f
+]777;notify;Command completed;docker stop 3f]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker stop 3f[K[K27
+27
+]777;notify;Command completed;docker stop 27]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker stop 273fco[C[C[C[C[C[C[C[C[C[C[Cocker container ls
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+638b30e26d4b        nginx               "nginx -g 'daemon of…"   2 minutes ago       Up 2 minutes        80/tcp              wonderful_hawking
+]777;notify;Command completed;docker container ls]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker ps -as[K
+CONTAINER ID        IMAGE                      COMMAND                  CREATED              STATUS                        PORTS               NAMES
+3f2633af3717        django                     "python3"                About a minute ago   Exited (137) 47 seconds ago                       clever_keldysh
+27f55545e6b9        tomaszguzialek/flask-api   "gunicorn '-b 0.0.0.…"   2 minutes ago        Exited (0) 38 seconds ago                         peaceful_wu
+638b30e26d4b        nginx                      "nginx -g 'daemon of…"   2 minutes ago        Up 2 minutes                  80/tcp              wonderful_hawking
+]777;notify;Command completed;docker ps -a]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker ps -as
+CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS                            PORTS               NAMES               SIZE
+3f2633af3717        django                     "python3"                2 minutes ago       Exited (137) About a minute ago                       clever_keldysh      5.69kB (virtual 436MB)
+27f55545e6b9        tomaszguzialek/flask-api   "gunicorn '-b 0.0.0.…"   2 minutes ago       Exited (0) About a minute ago                         peaceful_wu         23.1kB (virtual 436MB)
+638b30e26d4b        nginx                      "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes                      80/tcp              wonderful_hawking   2B (virtual 127MB)
+]777;notify;Command completed;docker ps -as]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker cotainer [C[1@n[C[C[C[C[C[C[C p r i n e [1P [1P [1P u n e 
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+3f2633af37173f29f8b2c18d3895f5f94919fe5d327011721c1403c7ed172fc9
+27f55545e6b9825980a6d04cd56334d9a5167174bd4a60c86b64d5a7f2f7d986
+
+Total reclaimed space: 28.75kB
+]777;notify;Command completed;docker container prune ]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker container prune [10Pps -as
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES               SIZE
+638b30e26d4b        nginx               "nginx -g 'daemon of…"   3 minutes ago       Up 3 minutes        80/tcp              wonderful_hawking   2B (virtual 127MB)
+]777;notify;Command completed;docker ps -as]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker m[Kimages
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+php                        7-fpm               9f53a362fb2f        9 days ago          405MB
+php                        latest              6340e7a80170        9 days ago          405MB
+postgres                   latest              0f10374e5170        9 days ago          314MB
+nginx                      latest              602e111c06b6        9 days ago          127MB
+alpine                     latest              a187dde48cd2        5 weeks ago         5.6MB
+hello-world                latest              bf756fb1ae65        4 months ago        13.3kB
+django                     latest              eb40dcf64078        3 years ago         436MB
+tomaszguzialek/flask-api   latest              9fed73d6ee86        3 years ago         436MB
+]777;notify;Command completed;docker images]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker system p[K[K[K[K[K[K[K[Kimage prune
+WARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+]777;notify;Command completed;docker image prune]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker image prunes[K
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+php                        7-fpm               9f53a362fb2f        9 days ago          405MB
+php                        latest              6340e7a80170        9 days ago          405MB
+postgres                   latest              0f10374e5170        9 days ago          314MB
+nginx                      latest              602e111c06b6        9 days ago          127MB
+alpine                     latest              a187dde48cd2        5 weeks ago         5.6MB
+hello-world                latest              bf756fb1ae65        4 months ago        13.3kB
+django                     latest              eb40dcf64078        3 years ago         436MB
+tomaszguzialek/flask-api   latest              9fed73d6ee86        3 years ago         436MB
+]777;notify;Command completed;docker images]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker images prunes[Kps -as
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES               SIZE
+638b30e26d4b        nginx               "nginx -g 'daemon of…"   5 minutes ago       Up 5 minutes        80/tcp              wonderful_hawking   2B (virtual 127MB)
+]777;notify;Command completed;docker ps -as]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker ps -asimages prune -a
+WARNING! This will remove all images without at least one container associated to them.
+Are you sure you want to continue? [y/N] y
+Deleted Images:
+untagged: php:latest
+untagged: php@sha256:aa449b3b778a3549a89dde21b35261516ecabd84891081b72000a8f94a457f3c
+deleted: sha256:6340e7a80170d3bdc88ef8c0935c01986a2497a81fb96458264bb066ff8ac342
+deleted: sha256:2f47f197507caddd14ff88a6207c14c64b11efa40873b66599bb66d37187d2d9
+deleted: sha256:43c63c77000c3ebfbd452d044d8f8fe22065f260238234134435997011f1d98c
+deleted: sha256:f9cf83226e168b96d8547d482d1c19d6964c31e2091e027f5a371456d074188c
+deleted: sha256:baf928e497268aa4f6999cd0d9d0937dd2c84eaed4c2ffe13ad30c6444e9ef3b
+deleted: sha256:2491fb42ec647baac7e02f66e538b177c322f42dec2b967ccefe20978159264b
+untagged: postgres:latest
+untagged: postgres@sha256:d96835c9032988c8a899cb8a3c54467dae81daaa99485de70e8c9bddd5432d92
+deleted: sha256:0f10374e51702232025eaa819ccecc6defac472f784fe30e1b5a2f99422c12a4
+deleted: sha256:3e045e7fd7374361bea454a00f0b42ce53cb566611ecd9df3ba6777fe8e5868a
+deleted: sha256:bedcac174b019a7ad1b39580167840c290a4eb5ef82f900f4134a71f54a32040
+deleted: sha256:93e12d685275f3c0d4e3d70addee5d0a96e09dbeeed316aeee9668c10bc1cf78
+deleted: sha256:c5451799841d625e6ef545cba35cf1f09be69a25f93403f58227c7c205447d60
+deleted: sha256:5782e0ec1e6b15448ab3a3f042d274d9c18954f5934b1e9bce5a551ad4a52616
+deleted: sha256:b2351014c8929178442d6ba191d36329ce3945b0c2e4832e6e6479077fc72e15
+deleted: sha256:e3ad6b09f36668089f5b4a39af83b120c02c44e4032801695ad47a0bb5cb6865
+deleted: sha256:bc6d54158e063ab62d19783ab0bcf29742f9bfd5dbc9c1a54050fe6dc25ae1d8
+deleted: sha256:a0ce615cf314f06535518b2ac2246b4982f5b20a186ae4d59b6fa75000e9f5a2
+deleted: sha256:e97c8d66c0d327eee15f100ad21f150847de7f5aa7c34dcbe994db17db858f23
+deleted: sha256:5839b173a703ef0a4930321a10969951e19e667f599fa1e9b5930d6fdb718ba8
+deleted: sha256:ef499ab478d7f41fb12dc85a8f2960e6ef5f44e543cc9b724198613847c04089
+deleted: sha256:00b955b4459853b7c5e797621b5b6ab08069fb410bb37568cf631586a591dadc
+untagged: tomaszguzialek/flask-api:latest
+untagged: tomaszguzialek/flask-api@sha256:90f00bfb18d0a8fc0f359eadbb62e54d31b1339fe80ce299c06e59ac896ccebe
+deleted: sha256:9fed73d6ee868195ba4d91b093e4db44986a182424d5e671c9d203f662944c3a
+deleted: sha256:7037c6e24d0df3237a77bddf15df92885057eb7eec7def12b2fcb31ab88781b8
+deleted: sha256:3095caeb46e77a6eb09ab22f5c944708681279385a06d8f089b58d677cb0a630
+deleted: sha256:f58dd052ded5fba981e317fed7b8c7b26ff91a2bb28ab3c74d630ab9d8e049db
+deleted: sha256:d808be612ac8e05d224a33a940f1c4f8fdec91eb4fff060a9df98057bea8ab78
+deleted: sha256:3b25e17d01de5200842cadbdc53f4afa1a3ed17a7121e4036e744a83a2732f76
+deleted: sha256:cebd67936ff89b117f72c410b11cc835c96cc8eabd161564ca38bfff99d781f5
+deleted: sha256:5d232b0ea43a530cd4db4be2c175b9dd46f534fa9cc8dcbf1d413c851f74e817
+deleted: sha256:dafccc932aece6c4914ca049df6539b75145ee2cf51f76e8d129aade450c87c3
+deleted: sha256:c854e44a1a5a22c9344c90f68ef6e07fd479e8ce1030fe141e3236887f1a4920
+untagged: django:latest
+untagged: django@sha256:5bfd3f442952463f5bc97188b7f43cfcd6c2f631a017ee2a6fca3cb8992501e8
+deleted: sha256:eb40dcf64078249a33f68fdd8d80624cb81b524c24f50b95fff5c2b40bdc3fdc
+deleted: sha256:16e6b55f22cca357d6d1c156ffde240ebd570d707409b959bdd5791ebe8d6968
+deleted: sha256:9c313ef12b5130c2a4d1d8ed5672b1cdf975851ad91c4893b23b809f1029096c
+deleted: sha256:776c17f61bc2b89f37cb5acc7d28f3ba9b19f5b44dee0d8d10c497aa46b99d9b
+deleted: sha256:81c42ad66fd6acd4f23fac6487913a931b741c3bb45de49be2d593ec40a1e63c
+deleted: sha256:53694fb1f2bf8ecef0e91bed100e5dbd5e832b33c29396fa6f0a6246f09bbfde
+deleted: sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3
+untagged: alpine:latest
+untagged: alpine@sha256:b276d875eeed9c7d3f1cfa7edb06b22ed22b14219a7d67c52c56612330348239
+deleted: sha256:a187dde48cd289ac374ad8539930628314bc581a481cdb41409c9289419ddb72
+deleted: sha256:beee9f30bc1f711043e78d4a2be0668955d4b761d587d6f60c2c8dc081efb203
+untagged: hello-world:latest
+untagged: hello-world@sha256:8e3114318a995a1ee497790535e7b88365222a21771ae7e53687ad76563e8e76
+deleted: sha256:bf756fb1ae65adf866bd8c456593cd24beb6a0a061dedf42b26a993176745f6b
+deleted: sha256:9c27e219663c25e0f28493790cc0b88bc973ba3b1686355f221c38a36978ac63
+untagged: php:7-fpm
+untagged: php@sha256:5abe5e2c53766932089318d34f1f133247cef9dfee15aa8ec1d21c83c7fb6a9c
+deleted: sha256:9f53a362fb2fdfb3381c4c2312eaede7a81821b9d151d3628f56acb4bd8a4cff
+deleted: sha256:03bc73d43c2500bf7d0b87655258e973968542d6c4865934a9b971d6de19133c
+deleted: sha256:62471ca50401b87a2c5579397cec1284ee76073a66854a3677a500d8eea9cf3d
+deleted: sha256:33cbc01ec9d6181bc1e08dedf92a4decf3e75aaf3da4d5a5c723469792ba4587
+deleted: sha256:ad92eb605bdb1daf444e1323cadc78c7d071f1262b390b3012d322a2a630319a
+deleted: sha256:68b69d704f60639a402ada5763c150f01ed5acd0144a336b3a8bcb93d43517f3
+deleted: sha256:2cbe2adeb00170dc3cc6510845ff9646b2dc7c5b75bc54cf5afe235f65191e7b
+deleted: sha256:4357861e7bb44981e8a2cb2eec7ebd96a6a2fba1a6c27c7952631abdf9dc7f1a
+deleted: sha256:d47a9f19524a306eb501704730a7e8e0a24be18e77357e1c0086f4c497321e67
+deleted: sha256:cd75673d61455ea78349abfcbcfb82e128406cbc904611f845f4e6b51f9266c9
+
+Total reclaimed space: 1.567GB
+]777;notify;Command completed;docker image prune -a]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker image prune -a[8Pps -as
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES               SIZE
+638b30e26d4b        nginx               "nginx -g 'daemon of…"   6 minutes ago       Up 6 minutes        80/tcp              wonderful_hawking   2B (virtual 127MB)
+]777;notify;Command completed;docker ps -as]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker ps -asimage prune -a[8Pps -asimages
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+nginx               latest              602e111c06b6        9 days ago          127MB
+]777;notify;Command completed;docker images]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ docker imagesps -as[K
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+638b30e26d4b        nginx               "nginx -g 'daemon of…"   6 minutes ago       Up 6 minutes        80/tcp              wonderful_hawking
+]777;notify;Command completed;docker ps -a]0;justin@B0-10-41-94-F0-E8:~/Documents/linux_trials/test_git]7;file://B0-10-41-94-F0-E8/home/justin/Documents/linux_trials/test_git[justin@localhost test_git]$ exit
+exit
+
+Script done on 2020-05-03 01:00:43+03:00
